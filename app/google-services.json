@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "843595725140",
+    "project_id": "dream-builder-bd78c",
+    "storage_bucket": "dream-builder-bd78c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:843595725140:android:85a2c2e07f1ab4624230c1",
+        "android_client_info": {
+          "package_name": "com.example.dreambuilder"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKibyeAoICnD0ISeGsR7C8o1DDhE0tHW8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

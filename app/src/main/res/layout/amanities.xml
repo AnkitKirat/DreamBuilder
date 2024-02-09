@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:columnCount="4"
+
+    android:alignmentMode="alignMargins"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+
+
+        android:layout_width="125dp"
+        android:layout_height="133dp"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="5dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/donate"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="95dp"
+            android:fontFamily="@font/opensans"
+            android:text="Donate"
+            android:textColor="@color/gray_txt"
+            android:textSize="14dp" />
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+</GridLayout>

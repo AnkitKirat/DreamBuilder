@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserQueries">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            tools:layout_editor_absoluteX="-99dp"
+            tools:layout_editor_absoluteY="43dp"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:fontFamily="@font/opensans"
+                    android:text="@string/admin"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardDonate"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+
+                    android:clickable="true"
+                    app:cardBackgroundColor="@color/white"
+
+                    app:cardElevation="5dp">
+                    <HorizontalScrollView
+                        android:id="@+id/horizontal_scroll"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+
+                        android:layout_gravity="center_horizontal"
+                        >
+
+                        <LinearLayout
+                            android:id="@+id/linear"
+                            android:layout_width="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:layout_height="60dp"
+
+                            android:orientation="horizontal" >
+
+                            <Button
+                                android:id="@+id/project"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/opensans"
+                                android:text="Add Project"
+                                android:layout_margin="10dp"
+                                android:textColor="@color/gray_txt"
+                                />
+
+
+                            <Button
+                                android:id="@+id/admin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/opensans"
+                                android:text="Add Admin"
+                                android:layout_margin="10dp"
+                                android:textColor="@color/gray_txt"
+                                />
+                            <Button
+                                android:id="@+id/appointment"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/opensans"
+                                android:text="User Appointments"
+                                android:layout_margin="10dp"
+                                android:textColor="@color/gray_txt"
+                                />
+                            <Button
+                                android:id="@+id/queries"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/opensans"
+                                android:text="User queries"
+                                android:layout_margin="10dp"
+                                android:textColor="@color/gray_txt"
+                                />
+
+                            <Button
+                                android:id="@+id/logout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/opensans"
+                                android:text="Logout"
+                                android:layout_margin="10dp"
+                                android:textColor="@color/gray_txt"
+                                />
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+                </androidx.cardview.widget.CardView>
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:stretchColumns="*"
+                    >
+
+                    <TableRow >
+
+                        <TextView
+                            android:text=" Name "
+                            android:layout_margin="1dp"
+                            android:layout_column="0"
+                            android:background="#FFFFFF"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:gravity="center"
+                            />
+
+                        <TextView
+
+
+                            android:text=" Description "
+                            android:layout_margin="1dp"
+                            android:layout_column="1"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:text="Phone Number"
+                            android:layout_margin="1dp"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:layout_column="2"
+                            android:textColor="@color/black"
+                            />
+                    </TableRow>
+
+
+
+
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/recyclerView"
+                            >
+
+                        </androidx.recyclerview.widget.RecyclerView>
+
+
+
+                </TableLayout>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>

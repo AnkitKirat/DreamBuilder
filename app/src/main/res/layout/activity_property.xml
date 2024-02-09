@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Property">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        tools:layout_editor_absoluteX="-99dp"
+        tools:layout_editor_absoluteY="43dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/prop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/opensans"
+            android:text="Property Name"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+<!--        <HorizontalScrollView-->
+<!--            android:id="@+id/horizontal_scroll"-->
+<!--            android:layout_width="400dp"-->
+<!--            android:layout_height="300dp"-->
+
+<!--            android:layout_margin="15dp"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            >-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/linear"-->
+<!--                android:layout_width="400dp"-->
+<!--                android:layout_margin="15dp"-->
+
+<!--                android:layout_height="280dp"-->
+<!--                android:orientation="horizontal" >-->
+<!--            </LinearLayout>-->
+
+<!--        </HorizontalScrollView>-->
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="400dp"
+            android:layout_height="310dp"
+
+            android:clickable="true"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="5dp">
+
+        <HorizontalScrollView
+            android:id="@+id/horizontal_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_gravity="center_horizontal"
+            >
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+        </HorizontalScrollView>
+        </androidx.cardview.widget.CardView>
+
+
+       <androidx.recyclerview.widget.RecyclerView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/recyclerView"
+           >
+
+       </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/amanities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="15dp"
+            android:clickable="true"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp">
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/opensans"
+                    android:text="@string/amenities"
+                    android:textColor="@color/gray_txt"
+                    android:textSize="20sp"
+                    />
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recyclerView2"
+                >
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="5dp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_marginTop="15dp">
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/opensans"
+                android:text="Description"
+                android:textColor="@color/gray_txt"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/opensans"
+                android:text="I think this is the best an simple way to have a multiline textView on android. Here we go: Write your text in an external editor (ex. Microsoft Word, LibreOffice, etc) with paragraphs and multiple lines. Open the strings.xml file of your project and create a new string (ex."
+                android:textColor="@color/gray_txt"
+                android:textSize="14sp"
+                />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="5dp"
+            app:cardBackgroundColor="@color/gray_txt"
+            android:layout_marginTop="15dp"
+            >
+
+                <Button
+                    android:id="@+id/appointment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/opensans"
+                    android:text="schedule Appointment"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    />
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
